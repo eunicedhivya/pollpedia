@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constituency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/constituency.css">
+    <style>
+       svg{
+           width: 100%;
+       }
+    </style>
+</head>
+        
+        <body>
+    <div class="tv9-dashboard">
+        <section class="container">
+            <div class="dash-intro">
+                <h1 class="const-title" id="constituency-name">Behat</h1>
+                <p id="const-intro">The Taliban are reported to have raised their flag above a key border post between Afghanistan and Pakistan, and claim it is now under their control.</p>
+            </div>
+            <div class="row">
+               <nav class="about-constituency">
+                </nav>
+            </div>
+        </section>
+        <section class="container">
+            <div class="row" id="map-content">
+                <div class="map-section col">
+                    <div class="sub-col">
+                        <div class="map animate__animated animate__fadeIn">
+                
+                        </div>
+                    </div> <!-- end of col -->
+
+                    <div class="sub-col curly animate__animated animate__fadeIn animate__delay-1s" >
+                        <img src="assets/img/curly.png" alt="">
+                    </div>
+
+                    <div class="sub-col">
+                        <div class="constmap animate__animated animate__fadeIn animate__delay-1s">
+                
+                        </div>
+                    </div> <!-- end of col -->
+
+                    <div class="sub-col curly display-desktop-only animate__animated animate__fadeIn animate__delay-2s">
+                        <img src="assets/img/curly.png" alt="">
+                    </div>
+                </div>
+                <div class="col">
+                    <ul class="aboutconst animate__animated animate__fadeIn animate__delay-2s">
+                        <li>Const No: <span id="constno"></span></li>
+                        <li>Lok Sabha Seat: <span id="loksabhaseat"></span></li>
+                        <li>District: <span id="district"></span></li>
+                        <li>Swing Seat: <span id="swingseat"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="point-section">
+                <div class="two-cols">
+                    <div class="points">
+                        <div class="point">
+                            <img src="assets/img/tot-electorate.png" alt="">
+                            <div class="pointcontent">
+                                <p>Total Voters</p>
+                                <span id="totalVoters"></span>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <p>Total Votes Polled</p>
+                            <span id="totVotesPolled"></span>
+                        </div>
+                    </div>
+                    <div class="points">
+                        <div class="point">
+                            <img src="assets/img/male-voters.png" alt="">
+                            <div class="pointcontent">
+                                <p>Male Voters</p>
+                                <span id="maleVoters"></span>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <p>Total Votes <small>(2017)</small></p>
+                            <span id="totMaleVotes"></span>
+                        </div>
+                    </div>
+                    <div class="points">
+                        <div class="point">
+                            <img src="assets/img/female-voters.png" alt="">
+                            <div class="pointcontent">
+                                <p>Female Voters</p>
+                                <span id="femaleVoters"></span>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <p>Total Votes <small>(2017)</small></p>
+                            <span id="totFemaleVotes"></span>
+                        </div>
+                    </div>
+                    <div class="points">
+                        <div class="point">
+                            <img src="assets/img/female-voters.png" alt="">
+                            <div class="pointcontent">
+                                <p>Third Gender</p>
+                                <span id="thirdGender"></span>
+                            </div>
+                        </div>
+                        <div class="point">
+                            <p>Total Votes <small>(2017)</small></p>
+                            <span id="totThirdGenVotes"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table">
+                    <table class="past-results">
+                        <thead>
+                            <tr>
+                                <th>Past Results</th>
+                                <th>2012</th>
+                                <th>2017</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Winner</td>
+                                <td id="winner2012">2012</td>
+                                <td id="winner2017">2017</td>
+                            </tr>
+                            <tr>
+                                <td>Turnout %</td>
+                                <td id="turnout2012">2012</td>
+                                <td id="turnout2017">2017</td>
+                            </tr>
+                            <tr>
+                                <td>Margin of Victory</td>
+                                <td id="marginVictory2012">2012</td>
+                                <td id="marginVictory2017">2017</td>
+                            </tr>
+                            <tr>
+                                <td>Margin of Victory %</td>
+                                <td id="marginVictoryPer2012">2012</td>
+                                <td id="marginVictoryPer2017">2017</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="subhead color-orange">Assembly election results</h2>
+            <div class="allcandresult">
+
+            </div>
+        </section>
+        <section class="container">
+            <h2 class="subhead color-orange">Constituency Profile</h2>
+            <div class="const-profile-content">
+                <h3 class="profile-subhead">Demographic Profile</h3>
+                <div id="demographic-profile"></div>
+                <h3>Past Winners (Candidates and Parties)</h3>
+                <div id="past-winners"></div>
+                <h3>Candidates in 2012 and 2017</h3>
+                <div id="candin2012n2013"></div>
+                <h3>NOTA (None of the Above)</h3>
+                <div id="nota"></div>
+                <h3>Voter Turnout</h3>
+                <div id="voterturnout"></div>
+                <h3>Poll Dates</h3>
+                <div id="polldates"></div>
+                <h3>Result Dates</h3>
+                <div id="resultdates"></div>
+                <h3>Number of Polling Stations</h3>
+                <div id="nopollingstations"></div>
+                <h3>Lok Sabha elections 2014 and 2019</h3>
+                <div id="loksabha2014n2019"></div>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/d3.v4.min.js"></script>
+    <script src="js/topojson.v2.min.js"></script>
+    <script src="js/d3-tip.js"></script> <!--used with topojson map-->
+    <script src="js/functions.js"></script> <!--used with topojson map-->
+    <script src="js/map-constituency.js"></script>
+    <script src="js/accordion-table.js"></script>
+    <script>
+        
+        // var currentUrl = window.location.href;
+        // var url = currentUrl;
+        // var params = (new URL(url)).searchParams;
+        // var chosenState = params.get('state'), chosenConst = parseInt(params.get('no')), chosenYear = params.get('year');
+
+        // Chosen State and Constituency
+        var chosenState = "up";
+        var chosenConst = 1;
+        var chosenYear = "2017";
+              
+
+        // import Data API for Constituency  
+        var constwisetrenddata2017 = (function() {
+            constwisetrenddata2017 = null;
+            jQuery.ajax({
+                'async': false,
+                'global': false,
+                'dataType': 'json',
+                'cache': false,
+                'url': 'assets/data/dataset-constituency.json',
+                'success': function(data) {
+                    constwisetrenddata2017 = data;
+                }
+            });
+            return constwisetrenddata2017[chosenState];
+        })();
+
+        // import topojson map for State
+        var assemplyconstmap_up = (function () {
+            assemplyconstmap_up = null;
+            jQuery.ajax({
+                'async': false,
+                'global': false,
+                'dataType': 'json',
+                'cache': false,
+                'url': constwisetrenddata2017.stateURL,
+                'success': function (stateShape) {
+                    assemplyconstmap_up = topojson.feature(stateShape, stateShape.objects.collection).features;
+                }
+            });
+            return assemplyconstmap_up;
+        })();
+
+        // Create statemap with all constituencies
+        drawAssemblyMap(".map", assemplyconstmap_up, {
+            type: 'state', 
+            statecode: 'U07', 
+            vhcode: 'up', 
+            defaultconst: chosenConst, 
+            constnokey: 'ac', 
+            constnamekey: 'ac_name', 
+            scale: constwisetrenddata2017.stateScale, 
+            center: constwisetrenddata2017.stateCenter, 
+            inset: true,
+            enableEvents: false
+        })   
+
+        // Get the current constituency data from map data
+        var getConstMap = assemplyconstmap_up.filter(function (object) {
+            return object.properties.ac === chosenConst;
+        })
+
+        // Get the current constituency data from dataset
+        var getConstData = constwisetrenddata2017["constituencyData"].filter(function (object) {
+            return object.constId === chosenConst;
+        })
+
+        // create constituency map of chosen constituency
+        drawAssemblyMap(".constmap", getConstMap, {
+            type: 'const', // Statecode for map
+            statecode: 'U07', // Statecode for map
+            vhcode: chosenState, // state vehicle code
+            defaultconst: chosenConst, // state vehicle code
+            constnokey: 'ac', // add map topojson
+            constnamekey: 'ac_name', // add map topojson
+            scale: getConstMap[0].properties.scale, // size adjust until it sits well
+            center: getConstMap[0].properties.center, // enter lat long from google of UP
+            inset: false,
+            enableEvents: false
+        })
+
+        // About Constituency
+        document.getElementById("constno").innerHTML = getConstData[0].constId;
+        document.getElementById("constituency-name").innerHTML = getConstData[0].constName;
+        document.getElementById("loksabhaseat").innerHTML = getConstData[0].loksabhaSeats;
+        document.getElementById("district").innerHTML = getConstData[0].district;
+        document.getElementById("swingseat").innerHTML = getConstData[0].swingSeat;
+
+        // About Demographics
+        // var demographicData = getConstData[0]["demographics"]
+        document.getElementById("totalVoters").innerHTML = formatNumberInd(getConstData[0].totalVoters);
+        document.getElementById("maleVoters").innerHTML = formatNumberInd(getConstData[0].maleVoters);
+        document.getElementById("femaleVoters").innerHTML = formatNumberInd(getConstData[0].femaleVoters);
+        document.getElementById("thirdGender").innerHTML = formatNumberInd(getConstData[0].thirdGender)  ;      
+        document.getElementById("totVotesPolled").innerHTML = formatNumberInd(getConstData[0].totalVotesPolled);
+        document.getElementById("totMaleVotes").innerHTML = formatNumberInd(getConstData[0].votedMale);
+        document.getElementById("totFemaleVotes").innerHTML = formatNumberInd(getConstData[0].votedFemale);getConstData[0]
+        document.getElementById("totThirdGenVotes").innerHTML = formatNumberInd(getConstData[0].votedThirdGender);
+
+        // Past results table
+        var pastResultsData = getConstData[0]["pastResults"];
+
+        document.getElementById("winner2012").innerHTML = pastResultsData.winner2012
+        document.getElementById("winner2017").innerHTML = pastResultsData.winner2017
+        document.getElementById("turnout2012").innerHTML = formatNumberInd(pastResultsData.turnout2012)
+        document.getElementById("turnout2017").innerHTML = formatNumberInd(pastResultsData.turnout2017)
+        document.getElementById("marginVictory2012").innerHTML = formatNumberInd(pastResultsData.victoryMargin2012)
+        document.getElementById("marginVictory2017").innerHTML = formatNumberInd(pastResultsData.victoryMargin2017)
+        document.getElementById("marginVictoryPer2012").innerHTML = formatNumberPer(pastResultsData['victoryMargin%2012'])
+        document.getElementById("marginVictoryPer2017").innerHTML = formatNumberPer(pastResultsData['victoryMargin%2017'])
+        
+        // Candidatewise results
+        var candidatewiseResultsData = getConstData[0]["allCandidates"];
+
+        drawAccTable( candidatewiseResultsData,  ".allcandresult",   ["candName", "party", "votes", "votes%", "status"], {
+            "party": "Party", "votes": "votes", "votes%": "Votes%", "candName": " Name", "status": "Won/Lost"
+        })
+                
+        var textData = getConstData[0]["text"]
+        document.getElementById('const-intro').innerHTML = textData["Introduction"]
+        document.getElementById("demographic-profile").innerHTML = textData["Demographic Profile"]
+        document.getElementById("past-winners").innerHTML = textData["Past Winners (Candidates and Parties)"]
+        document.getElementById("candin2012n2013").innerHTML = textData["Candidates in 2012 and 2017"]
+        document.getElementById("nota").innerHTML = textData["NOTA (None of the Above)"]
+        document.getElementById("voterturnout").innerHTML = textData["Voter Turnout"]
+        document.getElementById("polldates").innerHTML = textData["Poll Dates"]
+        document.getElementById("resultdates").innerHTML = textData["Result Dates"]
+        document.getElementById("nopollingstations").innerHTML = textData["Number of Polling Stations"]
+        document.getElementById("loksabha2014n2019").innerHTML = textData["Lok Sabha elections 2014 and 2019"]
+                
+        
+    </script>
+</body>
+</html>

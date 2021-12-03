@@ -1,0 +1,362 @@
+.tv9-dashboard {
+  font-family: "Georama", sans-serif;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.tv9-dashboard .container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+.tv9-dashboard .container p {
+  font-size: 16px;
+}
+
+.map svg,
+.upmap {
+  width: 80%;
+}
+
+.constmap path {
+  fill: red;
+}
+
+#map-content {
+  display: flex;
+  align-items: center;
+}
+
+.party-intro,
+.main-search,
+.map-section {
+  display: flex;
+  column-gap: 20px;
+  width: 100%;
+  max-width: 650px;
+  /* margin: 20px auto; */
+}
+.main-search {
+  text-align: center;
+  justify-content: center;
+}
+.main-search .search-input {
+  padding: 10px 30px;
+  border-radius: 50px;
+  border: 1px solid #666;
+  background: #ffffff;
+  border: 1px solid #b9b9b9;
+  box-sizing: border-box;
+  color: #666;
+}
+.party-intro .party-logo {
+  border-radius: 50%;
+  align-self: center;
+}
+.party-intro h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0;
+}
+.party-intro .party-logo img {
+  width: 100%;
+  height: auto;
+}
+
+.seat-info {
+  font-family: Georama;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -0.02em;
+  text-align: left;
+}
+.seat-info span {
+  display: block;
+}
+
+.filterBtns {
+  background-color: #a5a5a5;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: center;
+  outline: none;
+  border: none;
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.filterBtns.active {
+  background-color: #000000;
+}
+
+.allcandresult table {
+  width: 100%;
+  box-sizing: border-box;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.allcandresult .partyRow.won {
+  background-color: #e5f8dc;
+  font-style: italic;
+}
+
+.allcandresult table tbody tr td,
+.allcandresult table thead tr th {
+  padding: 10px 15px 10px 20px;
+}
+
+.allcandresult table thead tr th {
+  font-size: 16px;
+}
+
+.allcandresult table tbody tr td {
+  font-size: 18px;
+  position: relative;
+}
+
+.allcandresult table thead tr {
+  background-color: #979797;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.allcandresult table tbody tr:last-child {
+  border-bottom: 1px solid #000;
+}
+
+.map path:hover {
+  fill: #000;
+}
+
+.map-tooltip2 {
+  background-color: #000;
+  color: #000;
+  padding: 5px 10px;
+  font-family: "Georama";
+}
+
+.tooltip-header p {
+  display: inline-block;
+}
+
+.inset-rect {
+  fill: transparent;
+  stroke: red;
+  stroke-width: 2px;
+}
+
+.dash-intro {
+  text-align: center;
+}
+
+.curly img {
+  width: 25px;
+}
+
+.points {
+  margin-bottom: 20px;
+  border-top: 5px solid #d8d8d8;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+.point:first-child {
+  display: grid;
+  grid-template-columns: 20% 85%;
+  margin-bottom: 20px;
+}
+.point:last-child {
+  background-color: #ccc;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.point p {
+  margin: 0;
+}
+
+.aboutconst {
+  list-style: none;
+}
+
+@media (max-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .party-intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .aboutconst {
+    text-align: center;
+  }
+
+  .two-cols {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 20px;
+  }
+  #map-content {
+    flex-direction: column;
+  }
+  .map-section {
+    /* flex-direction: column-reverse; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .display-desktop-only {
+    display: none;
+  }
+
+  .filterBtns {
+    display: inline-block;
+  }
+
+  .seat-info,
+  .yearwisefilters {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .allcandresult table tbody,
+  .allcandresult table tr,
+  .allcandresult table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: right;
+  }
+
+  .allcandresult table thead {
+    display: none;
+  }
+
+  .allcandresult table td {
+    border-bottom: 1px solid #ccc;
+  }
+  .allcandresult table td:first-child {
+    border-top: 2px solid #000;
+  }
+  .allcandresult table td:last-child {
+    border-bottom: none;
+  }
+
+  .allcandresult table td:before {
+    content: attr(data-label);
+    position: absolute;
+    left: 15px;
+    width: 50%;
+    padding-left: 15px;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .allcandresult table tbody tr td.stateRow {
+    cursor: pointer;
+  }
+
+  .allcandresult table tbody tr td.stateRow:hover {
+    background-color: #b6d5a7;
+  }
+
+  .allcandresult table tbody tr td.stateRow::after {
+    content: "+";
+    position: absolute;
+    left: 7px;
+    font-size: 18px;
+    line-height: 1;
+    font-style: normal;
+  }
+  .allcandresult table tbody tr td.active::after {
+    content: "-";
+  }
+
+  .allcandresult .districtRow {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  /* landscape tablets, landscape iPad, lo-res laptops ands desktops */
+
+  .map-section .col:first-child {
+    width: 75%;
+  }
+  .map-section .col:last-child {
+    width: 25%;
+  }
+
+  .map-section {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .allcandresult table td:first-child {
+    width: 40%;
+  }
+  .allcandresult table td:nth-child(2),
+  .allcandresult table td:nth-child(3) {
+    width: 30%;
+  }
+  .allcandresult table tbody tr {
+    border-bottom: 1px dotted black;
+  }
+  .allcandresult thead th:first-child,
+  .allcandresult tbody td:first-child {
+    width: 30%;
+  }
+  .allcandresult thead th:nth-child(2),
+  .allcandresult tbody td:nth-child(2) {
+    width: 20%;
+  }
+  .allcandresult thead th:nth-child(3),
+  .allcandresult tbody td:nth-child(3),
+  .allcandresult thead th:nth-child(4),
+  .allcandresult tbody td:nth-child(4),
+  .allcandresult thead th:nth-child(5),
+  .allcandresult tbody td:nth-child(5) {
+    width: 16.6%;
+  }
+  .allcandresult .districtRow {
+    display: table-cell;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .point-section {
+    display: flex;
+    /* grid-template-columns: 55% 45%; */
+  }
+  .point-section .two-cols {
+    width: 60%;
+  }
+  .point-section .table {
+    width: 40%;
+  }
+  .past-results {
+    margin: 0 0 0 76px;
+  }
+  .point-section .two-cols {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 20px;
+  }
+}
+
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}

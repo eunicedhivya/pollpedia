@@ -1,0 +1,86 @@
+.tv9-dashboard {
+  font-family: "Georama", sans-serif;
+  padding: 0 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.tv9-dashboard .container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+.tv9-dashboard .container p {
+  font-size: 16px;
+}
+.tv9-dashboard .container .row {
+  text-align: center;
+}
+.list-inline {
+  display: flex;
+  column-gap: 25px;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+}
+.list-inline li {
+  display: flex;
+  list-style: none;
+  font-size: 14px;
+}
+.list-inline li span {
+  margin-left: 5px;
+  font-weight: 700;
+}
+.candidate-info {
+  background-color: #d7d7d7;
+  padding: 10px 20px;
+}
+.candidate-info h2 {
+  margin: 0 0 0 0;
+}
+.candidate-info .list-inline li {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  text-align: center;
+  justify-content: center;
+}
+.candidate-info .list-inline li img {
+  width: 80px;
+  margin: 15px auto 15px auto;
+}
+.candidate-info .list-inline li span {
+  border-top: 1px solid #333;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+#candidateName {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+#candidateImg {
+  width: 250px;
+  border-radius: 50%;
+  margin: 0 0 10px 0;
+}
+
+@media (max-width: 600px) {
+  /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+}
+@media (min-width: 768px) {
+  /* landscape tablets, landscape iPad, lo-res laptops ands desktops */
+
+  .candidate-info .list-inline {
+    column-gap: 80px;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
