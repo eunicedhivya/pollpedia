@@ -15,8 +15,6 @@
     <link rel="stylesheet" href="css/common.css">
     <!-- ------------- -->
     <link rel="stylesheet" href="css/election.css">
-    <!-- For Dropdown -->
-    <link rel="stylesheet" href="css/fstdropdown.css">
 </head>
 
 <body>
@@ -254,7 +252,6 @@
     <!-- <img src="images/footer.jpg" alt=""> -->
     <!-- ------------- -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="js/fstdropdown.js"></script>
     <script src="js/d3.v4.min.js"></script>
     <script src="js/topojson.v2.min.js"></script>
     <script src="js/d3-tip.js"></script>
@@ -262,41 +259,6 @@
     <script src="js/horstackchart.js"></script>
     <script src="js/map-state.js"></script>
     <script src="js/alliance-list.js"></script>
-    <script>
-        function setDrop() {
-            if (!document.getElementById('third').classList.contains("fstdropdown-select"))
-                document.getElementById('third').className = 'fstdropdown-select';
-            setFstDropdown();
-        }
-        setFstDropdown();
-        function removeDrop() {
-            if (document.getElementById('third').classList.contains("fstdropdown-select")) {
-                document.getElementById('third').classList.remove('fstdropdown-select');
-                document.getElementById("third").fstdropdown.dd.remove();
-            }
-        }
-        function addOptions(add) {
-            var select = document.getElementById("fourth");
-            for (var i = 0; i < add; i++) {
-                var opt = document.createElement("option");
-                var o = Array.from(document.getElementById("fourth").querySelectorAll("option")).slice(-1)[0];
-                var last = o == undefined ? 1 : Number(o.value) + 1;
-                opt.text = opt.value = last;
-                select.add(opt);
-            }
-        }
-        function removeOptions(remove) {
-            for (var i = 0; i < remove; i++) {
-                var last = Array.from(document.getElementById("fourth").querySelectorAll("option")).slice(-1)[0];
-                if (last == undefined)
-                    break;
-                Array.from(document.getElementById("fourth").querySelectorAll("option")).slice(-1)[0].remove();
-            }
-        }
-        function updateDrop() {
-            document.getElementById("fourth").fstdropdown.rebind();
-        }
-    </script>
     <script>
         var chosenState = "up",
             chosenYear = "2017";
@@ -362,15 +324,15 @@
 
         document.getElementById("year2017").addEventListener("click", function () {
             d3.selectAll(".filterBtns").attr("class", "filterBtns")
-            this.classList = "filterBtns active";
-            drawAssemblyMap(".map", {
-                statecode: constwisetrenddata2017["stateCode"], // Statecode for map
-                vhcode: constwisetrenddata2017["vhcode"], // state vehicle code
-                defaultconst: 1, // state vehicle code
-                mapsource: constwisetrenddata2017["mapsource"], // add map topojson
-                year: "2017", // add map topojson
-                scale: constwisetrenddata2017["scale"], // size adjust until it sits well
-                center: constwisetrenddata2017["center"] // enter lat long from google of UP
+                this.classList = "filterBtns active";
+                drawAssemblyMap(".map", {
+                    statecode: constwisetrenddata2017["stateCode"], // Statecode for map
+                    vhcode: constwisetrenddata2017["vhcode"], // state vehicle code
+                    defaultconst: 1, // state vehicle code
+                    mapsource: constwisetrenddata2017["mapsource"], // add map topojson
+                    year: "2017", // add map topojson
+                    scale: constwisetrenddata2017["scale"], // size adjust until it sits well
+                    center: constwisetrenddata2017["center"] // enter lat long from google of UP
             })
             drawHorizontalStackChart("#seatshare2017", constwisetrenddata2017["voteshare"]["2017"], {
                 "type": "Seats",

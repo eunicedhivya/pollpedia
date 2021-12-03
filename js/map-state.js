@@ -43,6 +43,10 @@ function drawAssemblyMap(selector, settings){
         .attr("viewBox", "0 0 " + width + " " + height)
         .attr("preserveAspectRatio", "xMinYMin")
         .append("g")
+
+    var toolTip4Mob = d3.select(selector)
+        .append("div")
+        .attr("class", "tooltip-mobile")
     
     var tool_tip = d3.tip()
         .attr("class", "map-tooltip")
@@ -83,8 +87,8 @@ function drawAssemblyMap(selector, settings){
             html += '</div>'
 
 
-
-
+            toolTip4Mob.html(html)
+            
             return html; 
         });
     svg.call(tool_tip);
