@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- for demo only -->
+    <link rel="stylesheet" href="css/common.css">
+    <!-- ------------- -->
+    <link rel="stylesheet" href="css/election.css">
+    <!-- For Dropdown -->
+    <link rel="stylesheet" href="css/fstdropdown.css">
+</head>
+
+<body>
+    <!-- for demo only -->
+    <img src="images/header.jpg" alt="">
+    <!-- ------------- -->
+    <div class="full_wrapper">
+        <div class="main_wrapper">
+            <div id="ad_level_1" class=""></div>
+            <div class="election_wrapper">
+                <div class="breadcrum">
+                    <ul>
+                        <li>
+                            <div itemscope="" itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
+                                <span>
+                                    <span itemprop="itemListElement" itemscope=""
+                                        itemtype="http://schema.org/ListItem"><a itemprop="item" href="/"><span
+                                                itemprop="name">Home</span></a>
+                                        <meta itemprop="position" content="0"></span> »
+                                    <span itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+                                        <a itemprop="item" href=""><span itemprop="name">Pollpedia</span></a>
+                                        <meta itemprop="position" content="1"></span> » <span aria-current="page"
+                                        class="breadcrumb_last">UP ASSEMBLY ELECTIONS 2021 </span>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tv9-dashboard">
+                    <div class="dash-intro">
+                        <h1 class="dash-title"><span id="stateName">Uttar Pradesh</span> assembly election 2021</h1>
+                        <p id="stateIntro">Uttar Pradesh is a state in northern India. With over 200 million inhabitants, it is the most populated state in India as well as the most populous country subdivision in the world.</p>
+                    </div>
+                    <nav class="yearwisefilters">
+                        <button class="filterBtns" id="year2012">2012</button>
+                        <button class="filterBtns active" id="year2017">2017</button>
+                    </nav>
+                    <div class="barchart-section">
+                        <div id="seatshare2017" class="horstackchart"></div>
+                        <div id="voteshare2017" class="horstackchart"></div>
+                    </div>
+                    <div class="alliance-section">
+                        <h2>Alliances</h2>
+                        <ul class="alliance-list"></ul>
+                    </div>
+                    <div class="map-section">
+                        <div class="map"></div>
+                        <div class="map-count">
+                            <div class="point">
+                                <img src="assets/img/tot-electorate.png" alt="">
+                                <div class="point-content">
+                                    <p>TOTAL ELECTORATE</p>
+                                    <span id="totStateVoters"></span>
+                                </div>
+                            </div>
+                            <div class="point">
+                                <img src="assets/img/male-voters.png" alt="">
+                                <div class="point-content">
+                                    <p>Male Voters</p>
+                                    <span id="totStateMaleVoters"> </span>
+                                </div>
+                            </div>
+                            <div class="point">
+                                <img src="assets/img/female-voters.png" alt="">
+                                <div class="point-content">
+                                    <p>Female Voters</p>
+                                    <span id="totStateFemaleVoters"> </span>
+                                </div>
+                            </div>
+                            <div class="point">
+                                <img src="assets/img/voter-turnout.png" alt="">
+                                <div class="point-content">
+                                    <p>Voter Turnout</p>
+                                    <span id="totStateVoterTurnout"> </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <code>	 &lt;select class='fstdropdown-select' data-searchdisable="true">	 &lt;/select>	</code>
+                        <select class='fstdropdown-select' data-searchdisable='true' id="second">
+                            <option value="">Select option</option>
+                            <option value="1">First</option>
+                            <option value="2">Second</option>
+                            <option value="3">Third</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="ad_level_2" class="">
+                    <div class="adsCont fullAdd"></div>
+                </div>
+                <section class="election_news_list">
+                    <div class="heading">
+                        <h2 class="h2"><a href="#">UP Elections 2021 Coverage</a></h2>
+                        <a class="moreNews" href="#">See More >></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <div id="grid_ad_index_1" class="">
+                                <div class="adsCont headertopads"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+                <div id="ad_level_3" class="">
+                    <div class="adsCont fullAdd"></div>
+                </div>
+                <section class="election_video_list">
+                    <div class="heading">
+                        <h2 class="h2"><a href="#">Election videos</a></h2>
+                        <a class="moreNews" href="#">See More >></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="imgWrap">
+                                    <a href=""><img src="https://www.news9live.com/images/placeholder.jpg" alt=""></a>
+                                </div>
+                                <figcaption>
+                                    <a href="">Adityanath hints at changing Azamgarh's name to 'Aryamgarh', Akhilesh
+                                        hits back with 'illiterate' jab</a>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- for demo only -->
+    <img src="images/footer.jpg" alt="">
+    <!-- ------------- -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/fstdropdown.js"></script>
+    <script src="js/d3.v4.min.js"></script>
+    <script src="js/topojson.v2.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/horstackchart.js"></script>
+    <script src="js/map-state.js"></script>
+    <script src="js/alliance-list.js"></script>
+    <script>
+        function setDrop() {
+            if (!document.getElementById('third').classList.contains("fstdropdown-select"))
+                document.getElementById('third').className = 'fstdropdown-select';
+            setFstDropdown();
+        }
+        setFstDropdown();
+        function removeDrop() {
+            if (document.getElementById('third').classList.contains("fstdropdown-select")) {
+                document.getElementById('third').classList.remove('fstdropdown-select');
+                document.getElementById("third").fstdropdown.dd.remove();
+            }
+        }
+        function addOptions(add) {
+            var select = document.getElementById("fourth");
+            for (var i = 0; i < add; i++) {
+                var opt = document.createElement("option");
+                var o = Array.from(document.getElementById("fourth").querySelectorAll("option")).slice(-1)[0];
+                var last = o == undefined ? 1 : Number(o.value) + 1;
+                opt.text = opt.value = last;
+                select.add(opt);
+            }
+        }
+        function removeOptions(remove) {
+            for (var i = 0; i < remove; i++) {
+                var last = Array.from(document.getElementById("fourth").querySelectorAll("option")).slice(-1)[0];
+                if (last == undefined)
+                    break;
+                Array.from(document.getElementById("fourth").querySelectorAll("option")).slice(-1)[0].remove();
+            }
+        }
+        function updateDrop() {
+            document.getElementById("fourth").fstdropdown.rebind();
+        }
+    </script>
+    <script>
+        var chosenState = "up",
+            chosenYear = "2017";
+
+        // import Data API for Constituency  
+        var constwisetrenddata2017 = (function () {
+            constwisetrenddata2017 = null;
+            jQuery.ajax({
+                'async': false,
+                'global': false,
+                'dataType': 'json',
+                'cache': false,
+                'url': 'assets/data/dataset-state.json',
+                'success': function (data) {
+                    constwisetrenddata2017 = data;
+                }
+            });
+            return constwisetrenddata2017[chosenState];
+        })();
+
+        // console.log(constwisetrenddata2017);
+
+
+        drawAssemblyMap(".map", {
+            statecode: 'U07', // Statecode for map
+            vhcode: 'up', // state vehicle code
+            defaultconst: 1, // state vehicle code
+            mapsource: constwisetrenddata2017["mapsource"], // add map topojson
+            year: chosenYear, // add map topojson
+            scale: constwisetrenddata2017["scale"], // size adjust until it sits well
+            center: constwisetrenddata2017["center"] // enter lat long from google of UP
+        })
+
+
+
+        document.getElementById("year2012").addEventListener("click", function () {
+            d3.selectAll(".filterBtns").attr("class", "filterBtns")
+            this.classList = "filterBtns active";
+            drawAssemblyMap(".map", {
+                statecode: constwisetrenddata2017["stateCode"], // Statecode for map
+                vhcode: constwisetrenddata2017["vhcode"], // state vehicle code
+                defaultconst: 1, // state vehicle code
+                mapsource: constwisetrenddata2017["mapsource"], // add map topojson
+                year: "2012", // add map topojson
+                scale: constwisetrenddata2017["scale"], // size adjust until it sits well
+                center: constwisetrenddata2017["center"] // enter lat long from google of UP
+            })
+            drawHorizontalStackChart("#seatshare2017", constwisetrenddata2017["voteshare"]["2022"], {
+                "type": "Seats",
+                "valueper": "votes%",
+                "label": "party",
+                "value": "votes"
+            })
+
+            drawHorizontalStackChart("#voteshare2017", constwisetrenddata2017["seatshare"]["2022"], {
+                "type": "Voteshare",
+                "valueper": "votes%",
+                "label": "party",
+                "value": "votes"
+            })
+            allianceList(constwisetrenddata2017["allAlliances"]["2022"])
+        })
+
+        document.getElementById("year2017").addEventListener("click", function () {
+            d3.selectAll(".filterBtns").attr("class", "filterBtns")
+            this.classList = "filterBtns active";
+            drawAssemblyMap(".map", {
+                statecode: constwisetrenddata2017["stateCode"], // Statecode for map
+                vhcode: constwisetrenddata2017["vhcode"], // state vehicle code
+                defaultconst: 1, // state vehicle code
+                mapsource: constwisetrenddata2017["mapsource"], // add map topojson
+                year: "2017", // add map topojson
+                scale: constwisetrenddata2017["scale"], // size adjust until it sits well
+                center: constwisetrenddata2017["center"] // enter lat long from google of UP
+            })
+            drawHorizontalStackChart("#seatshare2017", constwisetrenddata2017["voteshare"]["2017"], {
+                "type": "Seats",
+                "valueper": "votes%",
+                "label": "party",
+                "value": "votes"
+            })
+
+            drawHorizontalStackChart("#voteshare2017", constwisetrenddata2017["seatshare"]["2017"], {
+                "type": "Voteshare",
+                "valueper": "votes%",
+                "label": "party",
+                "value": "votes"
+            })
+            allianceList(constwisetrenddata2017["allAlliances"][chosenYear])
+        })
+
+        document.getElementById("stateName").innerHTML = constwisetrenddata2017["stateName"]
+        document.getElementById("stateIntro").innerHTML = constwisetrenddata2017["stateIntro"]
+        document.getElementById("totStateVoters").innerHTML = formatNumberInd(constwisetrenddata2017["totalVoters"])
+        document.getElementById("totStateMaleVoters").innerHTML = formatNumberInd(constwisetrenddata2017["maleVoters"])
+        document.getElementById("totStateFemaleVoters").innerHTML = formatNumberInd(constwisetrenddata2017[
+            "femaleVoters"])
+        document.getElementById("totStateVoterTurnout").innerHTML = constwisetrenddata2017["voterTurnout"]
+
+        allianceList(constwisetrenddata2017["allAlliances"][chosenYear])
+
+
+        drawHorizontalStackChart("#seatshare2017", constwisetrenddata2017["voteshare"][chosenYear], {
+            "type": "Seats",
+            "valueper": "votes%",
+            "label": "party",
+            "value": "votes"
+        })
+
+        drawHorizontalStackChart("#voteshare2017", constwisetrenddata2017["seatshare"][chosenYear], {
+            "type": "Voteshare",
+            "valueper": "votes%",
+            "label": "party",
+            "value": "votes"
+        })
+    </script>
+</body>
+
+</html>

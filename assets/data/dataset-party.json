@@ -1,0 +1,328 @@
+{
+    "up": [
+            {
+            "party-name": "Bahujan Samajwadi Party",
+            "party-abbr": "BSP",
+            "party-logo": "https://via.placeholder.com/125",
+            "party-intro": "<p>The Bahujan Samaj Party (BSP) is a national level political party in India that was formed to represent Bahujans (literally means \"people in majority\"), referring to Scheduled Castes, Scheduled Tribes, and Other Backward Classes (OBC), along with religious minorities.</p>",
+            "cand-list": {
+                "2017":[
+                    {
+                        "constId": 238,
+                        "constName": "Jahanabad",
+                        "candName": "Jai Kumar Singh Jaiki",
+                        "party": "Apna Dal",
+                        "votes": 81438,
+                        "votes%": 45.18,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 247,
+                        "constName": "Vishwanathganj",
+                        "candName": "Rakesh Kumar Verma",
+                        "party": "Apna Dal",
+                        "votes": 81899,
+                        "votes%": 42.07,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 248,
+                        "constName": "Pratapgarh",
+                        "candName": "Sangam Lal Gupta",
+                        "party": "Apna Dal",
+                        "votes": 80828,
+                        "votes%": 44.17,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 255,
+                        "constName": "Soraon",
+                        "candName": "Jamuna Prasad Saroj",
+                        "party": "Apna Dal",
+                        "votes": 77814,
+                        "votes%": 37.02,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 257,
+                        "constName": "Pratappur",
+                        "candName": "Karan Singh",
+                        "party": "Apna Dal",
+                        "votes": 64151,
+                        "votes%": 31.33,
+                        "status": "Lost"
+                    },
+                    {
+                        "constId": 258,
+                        "constName": "Handia",
+                        "candName": "Pramila Tripathi",
+                        "party": "Apna Dal",
+                        "votes": 63920,
+                        "votes%": 32.01,
+                        "status": "Lost"
+                    },
+                    {
+                        "constId": 302,
+                        "constName": "Shohratgarh",
+                        "candName": "Amar Singh Chaudhary",
+                        "party": "Apna Dal",
+                        "votes": 67653,
+                        "votes%": 36.53,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 370,
+                        "constName": "Mariyahu",
+                        "candName": "Leena Tiwari",
+                        "party": "Apna Dal",
+                        "votes": 58804,
+                        "votes%": 32.88,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 391,
+                        "constName": "Sevapuri",
+                        "candName": "Neel Ratan Singh Patel",
+                        "party": "Apna Dal",
+                        "votes": 103423,
+                        "votes%": 50.48,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 395,
+                        "constName": "Chhanbey",
+                        "candName": "Rahul Prakash",
+                        "party": "Apna Dal",
+                        "votes": 107007,
+                        "votes%": 50.62,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 403,
+                        "constName": "Duddhi",
+                        "candName": "Hariram",
+                        "party": "Apna Dal",
+                        "votes": 64399,
+                        "votes%": 34.24,
+                        "status": "Won"
+                    }
+                ],
+                "2012":[
+                                        
+                    {
+                        "constId": 395,
+                        "constName": "Chhanbey",
+                        "candName": "Rahul Prakash",
+                        "party": "Apna Dal",
+                        "votes": 107007,
+                        "votes%": 50.62,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 403,
+                        "constName": "Duddhi",
+                        "candName": "Hariram",
+                        "party": "Apna Dal",
+                        "votes": 64399,
+                        "votes%": 34.24,
+                        "status": "Won"
+                    }
+                ]
+            }
+
+        },
+        {
+            "party-name": "Apna Dal",
+            "party-abbr": "AD",
+            "party-logo": "https://via.placeholder.com/125",
+            "party-intro": "<p>The Apna Dal (AD) is a national level political party in India that was formed to represent Bahujans (literally means \"people in majority\"), referring to Scheduled Castes, Scheduled Tribes, and Other Backward Classes (OBC), along with religious minorities.</p>",
+            "cand-list": {
+                "2017":[
+                    {
+                        "constId": 248,
+                        "constName": "Pratapgarh",
+                        "candName": "Sangam Lal Gupta",
+                        "party": "Apna Dal",
+                        "votes": 80828,
+                        "votes%": 44.17,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 255,
+                        "constName": "Soraon",
+                        "candName": "Jamuna Prasad Saroj",
+                        "party": "Apna Dal",
+                        "votes": 77814,
+                        "votes%": 37.02,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 257,
+                        "constName": "Pratappur",
+                        "candName": "Karan Singh",
+                        "party": "Apna Dal",
+                        "votes": 64151,
+                        "votes%": 31.33,
+                        "status": "Lost"
+                    },
+                    {
+                        "constId": 258,
+                        "constName": "Handia",
+                        "candName": "Pramila Tripathi",
+                        "party": "Apna Dal",
+                        "votes": 63920,
+                        "votes%": 32.01,
+                        "status": "Lost"
+                    },
+                    {
+                        "constId": 302,
+                        "constName": "Shohratgarh",
+                        "candName": "Amar Singh Chaudhary",
+                        "party": "Apna Dal",
+                        "votes": 67653,
+                        "votes%": 36.53,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 370,
+                        "constName": "Mariyahu",
+                        "candName": "Leena Tiwari",
+                        "party": "Apna Dal",
+                        "votes": 58804,
+                        "votes%": 32.88,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 391,
+                        "constName": "Sevapuri",
+                        "candName": "Neel Ratan Singh Patel",
+                        "party": "Apna Dal",
+                        "votes": 103423,
+                        "votes%": 50.48,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 395,
+                        "constName": "Chhanbey",
+                        "candName": "Rahul Prakash",
+                        "party": "Apna Dal",
+                        "votes": 107007,
+                        "votes%": 50.62,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 403,
+                        "constName": "Duddhi",
+                        "candName": "Hariram",
+                        "party": "Apna Dal",
+                        "votes": 64399,
+                        "votes%": 34.24,
+                        "status": "Won"
+                    }
+                ],
+                "2012":[
+                    {
+                        "constId": 238,
+                        "constName": "Jahanabad",
+                        "candName": "Jai Kumar Singh Jaiki",
+                        "party": "Apna Dal",
+                        "votes": 81438,
+                        "votes%": 45.18,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 247,
+                        "constName": "Vishwanathganj",
+                        "candName": "Rakesh Kumar Verma",
+                        "party": "Apna Dal",
+                        "votes": 81899,
+                        "votes%": 42.07,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 248,
+                        "constName": "Pratapgarh",
+                        "candName": "Sangam Lal Gupta",
+                        "party": "Apna Dal",
+                        "votes": 80828,
+                        "votes%": 44.17,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 255,
+                        "constName": "Soraon",
+                        "candName": "Jamuna Prasad Saroj",
+                        "party": "Apna Dal",
+                        "votes": 77814,
+                        "votes%": 37.02,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 257,
+                        "constName": "Pratappur",
+                        "candName": "Karan Singh",
+                        "party": "Apna Dal",
+                        "votes": 64151,
+                        "votes%": 31.33,
+                        "status": "Lost"
+                    },
+                    {
+                        "constId": 258,
+                        "constName": "Handia",
+                        "candName": "Pramila Tripathi",
+                        "party": "Apna Dal",
+                        "votes": 63920,
+                        "votes%": 32.01,
+                        "status": "Lost"
+                    },
+                    {
+                        "constId": 302,
+                        "constName": "Shohratgarh",
+                        "candName": "Amar Singh Chaudhary",
+                        "party": "Apna Dal",
+                        "votes": 67653,
+                        "votes%": 36.53,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 370,
+                        "constName": "Mariyahu",
+                        "candName": "Leena Tiwari",
+                        "party": "Apna Dal",
+                        "votes": 58804,
+                        "votes%": 32.88,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 391,
+                        "constName": "Sevapuri",
+                        "candName": "Neel Ratan Singh Patel",
+                        "party": "Apna Dal",
+                        "votes": 103423,
+                        "votes%": 50.48,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 395,
+                        "constName": "Chhanbey",
+                        "candName": "Rahul Prakash",
+                        "party": "Apna Dal",
+                        "votes": 107007,
+                        "votes%": 50.62,
+                        "status": "Won"
+                    },
+                    {
+                        "constId": 403,
+                        "constName": "Duddhi",
+                        "candName": "Hariram",
+                        "party": "Apna Dal",
+                        "votes": 64399,
+                        "votes%": 34.24,
+                        "status": "Won"
+                    }
+                ]
+            }
+
+        }
+    ]
+}

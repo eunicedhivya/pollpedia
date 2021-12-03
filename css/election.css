@@ -1,0 +1,69 @@
+.tv9-dashboard{text-align:center;font-family:Georama,sans-serif;box-sizing:border-box}
+.tv9-dashboard h1.dash-title{font-weight:700;font-size:40px;line-height:44px;text-align:center;color:#000;text-transform:capitalize;margin-bottom:15px}
+.tv9-dashboard .dash-intro p{font-family:Montserrat;font-weight:400;font-size:18px;line-height:22px;text-align:center;letter-spacing:-.02em;color:#000;margin-bottom:15px}
+.horstackchart{margin-bottom:20px;position:relative;width:50%}
+.horbarchart{margin-bottom:10px;font-family:Georama,sans-serif}
+.horbarchart::before{content:attr(data-label);position:absolute;left:50%;top:-30px;width:50%;transform:translateX(-50%);padding-left:0;font-weight:400;font-size:14px;color:#a3a3a3;text-align:center}
+.horbarchart::after{content:"";width:0;height:40px;position:absolute;border-left:.12em dotted #000;top:-6px;left:50%}
+.yearwisefilters{margin-bottom:30px}
+.filterBtns{font-family:Georama,sans-serif;background:#a5a5a5;border-radius:12px;font-weight:700;font-size:19px;text-align:center;color:#fff;border:none;padding:5px 10px;line-height:15px;cursor:pointer;margin:0 5px}
+.filterBtns.active{background:#070707}
+.barchart-section{display:flex;column-gap:100px;align-items:center}
+.alliance-section{font-family:Montserrat,sans-serif;font-size:12px;line-height:18px;letter-spacing:-.02em;margin-bottom:20px}
+.alliance-section h2{font-weight:700;text-transform:uppercase;color:#000}
+.alliance-list li{color:#606060}
+.map-section{display:flex;column-gap:20px;align-items:flex-start;width:100%}
+.map-section .map{width:80%}
+.map-section .map-count{width:20%}
+.map-count .point{display:flex;column-gap:10px;padding:10px 10px;align-items:flex-start;margin-bottom:20px;width:100%}
+.map-count .point:first-child{background-color:#adadad;border-radius:6px}
+.map-count .point:first-child .point-content span{color:#fff}
+.map-count .point:nth-child(4){background-color:#eaeaea;border-radius:6px}
+.map-count .point:nth-child(2) .point-content,.map-count .point:nth-child(3) .point-content{border-top:5px solid #d8d8d8}
+.map-count .point-content{text-align:left;width:100%}
+.map-count .point-content p{margin:0;text-transform:uppercase;font-size:14px;line-height:17px;color:#464646}
+.map-count .point-content span{font-size:21px;line-height:25px;color:#000}
+.map-count .point:nth-child(2) .point-content p:first-child,.map-count .point:nth-child(3) .point-content p:first-child{color:red}
+.map path:hover{fill:#000}
+.map-tooltip{text-align:left;font-family:Georama,sans-serif}
+.map-tooltip::before{position:absolute;content:"";width:30px;height:8px;background-color:#000;top:28px;left:-30px}
+.tooltip-header p{display:inline-block;font-size:15px!important;padding:5px 10px;margin:0}
+.tooltip-content{background-color:#000;width:fit-content;padding:10px}
+.tooltip-content .datapoint{display:inline-block;font-size:21px;padding:5px 10px;color:#fff;font-weight:700;border-left:1px solid #fff}
+.tooltip-content .datapoint:first-child{border-left:none}
+.tooltip-content .datapoint p{margin:0;font-size:21px;font-weight:700;color:#fff}
+.tooltip-header p:first-child{background-color:#978282}
+.tooltip-header p:last-child{background-color:#a1cdca}
+.gotoLink{background-color:#378eaa;width:fit-content;padding:5px 10px}
+.gotoLink a{color:#fff;text-decoration:none;font-size:14px}
+.election_wrapper .breadcrum{text-align:center;margin-top:15px}
+.election_wrapper .breadcrum li{margin-right:0}
+.election_wrapper .breadcrum li span{font-size:12px;line-height:15px;color:#958f8f;text-transform:uppercase}
+.election_wrapper .breadcrum li span.breadcrumb_last{color:#000}
+.election_news_list{width:100%;float:left}
+.election_news_list .heading,.election_video_list .heading{display:flex;align-items:flex-end}
+.election_news_list .h2,.election_video_list .h2{font-family:Georama;font-style:normal;font-weight:700;font-size:32px;line-height:44px;text-align:center}
+.election_news_list .h2 a,.election_video_list .h2 a{color:#f6901e}
+.election_news_list ul,.election_video_list ul{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between}
+.election_news_list figure .imgWrap a,.election_video_list figure .imgWrap a{display:block;margin-bottom:5px}
+.election_news_list ul li figcaption a,.election_video_list ul li figcaption a{font-weight:700;font-size:18px;line-height:22px;color:#000;overflow:hidden;text-overflow:ellipsis;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical}
+.election_news_list ul li{width:323.33px;margin-bottom:20px}
+.election_news_list ul li:first-child{width:661.66px}
+.moreNews{font-family:Georama;font-weight:400;font-size:16px;text-align:center;color:#a1a1a1;white-space:pre}
+.election_video_list ul li{width:49%;margin-bottom:20px}
+.election_video_list figure .imgWrap{position:relative}
+.election_video_list figure .imgWrap a::after{content:"";background:url(https://www.news9live.com/theme_tv/images/play.png);background-position:center;background-size:46px;background-repeat:no-repeat;position:absolute;width:100%;height:100%;top:0;left:0}
+@media(max-width:767px){
+.tv9-dashboard .dash-intro p{line-height:20px}
+.barchart-section,.map-section{flex-wrap:wrap}
+.horstackchart,.map-section .map,.map-section .map-count{width:100%}
+.horstackchart{margin-bottom:45px;}
+.map-section .map-count{display:flex;flex-wrap:wrap;justify-content:space-between}
+.map-count .point{width:50%}
+.election_news_list .h2{font-size:25px;text-align:left;line-height:31px}
+.election_news_list ul li,.election_video_list ul li{width:100%}
+.election_news_list figure{display:flex}
+.election_news_list figure .imgWrap{width:112px;margin-right:10px}
+.election_news_list figure .imgWrap img{aspect-ratio:4/3}
+.election_news_list figcaption{width:calc(100% - 122px)}
+}

@@ -1,0 +1,36 @@
+{
+    "up": [
+            {
+            "id": 1,
+            "name": "Yogi Adityanath",
+            "constituency": "Gorakhpur",
+            "state": "Uttar Pradesh",
+            "age": 49,
+            "seat-type": "GEN",
+            "party": "BJP",
+            "pic": "https://via.placeholder.com/300",
+            "intro": "<p>Yogi Adityanath (born Ajay Mohan Bisht; 5 June 1972 ) is an Indian Hindu monk and politician serving as the 22nd and current Chief Minister of Uttar Pradesh, in office since 19 March 2017.</p>",
+            "criminalcases": 25,
+            "education": "Graduate",
+            "total-assets": "10 Crore",
+            "total-liabilities": "20 Crore"
+
+        },
+        {
+            "id": 2,
+            "name": "Yogi Adityanath2",
+            "constituency": "BJP",
+            "state": "BJP",
+            "age": "BJP",
+            "seat-type": "BJP",
+            "party": "BJP",
+            "pic": "https://via.placeholder.com/300",
+            "intro": "<p>The Bahujan Samaj Party (BSP) is a national level political party in India that was formed to represent Bahujans (literally means \"people in majority\"), referring to Scheduled Castes, Scheduled Tribes, and Other Backward Classes (OBC), along with religious minorities.</p>",
+            "criminalcases": "0",
+            "education": "0",
+            "total-assets": "0",
+            "total-liabilities": "0"
+
+        }
+    ]
+}

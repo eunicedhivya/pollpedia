@@ -1,0 +1,345 @@
+{
+    "up": {
+      "allAlliances": [
+        "BJP + Apna Dal (Sonelal) + NISHAD Party",
+        "Samajwadi Party (SP) + Rashtriya Lok Dal (RLD) + Suheldev Bharatiya Samaj Party (SBSP) + Mahan Dal + Janvadi Party (Socialist)"
+      ],
+      "constituencydata": [
+        {            
+            "constId": 1,
+            "constName": "Behat",
+            "loksabhaSeats": "Alipurduars",
+            "district": "Saharanpur",
+            "swingSeat": "GEN",
+            "totalElectorate": 12336569,
+            "maleVoters": 13283724,
+            "femaleVoters": 13283724,
+            "thirdGender": 13283724,
+            "totalVotesPolled": 250983,
+            "votedMale": 13283724,
+            "votedFemale": 13283724,
+            "votedThirdGender": 13283724,
+            "demographics": {
+                "totalElectorate": 336569,
+                "maleVoters": 13283724,
+                "femaleVoters": 13283724,
+                "thirdGender": 13283724,
+                "totalVotesPolled": 250983,
+                "votedMale": 13283724,
+                "votedFemale": 13283724,
+                "votedThirdGender": 13283724
+            },
+            "pastResults": {
+                "winner2017": "INC",
+                "winner2012": "BSP",
+                "turnout2017": 13283724,
+                "turnout2012": 13283724,
+                "victoryMargin2012": 25586,
+                "victoryMargin%2012": 10.2,
+                "victoryMargin2017": 25586,
+                "victoryMargin%2017": 10.2
+            },
+            "allYears": {
+                "party2022": "NA",
+                "party2017": "INC",
+                "party2012": "BSP"
+            },
+            "allCandidates":[
+                {
+                  "constId": 1,
+                  "candName": "NARESH SAINI",
+                  "party": "INC",
+                  "votes": "97035",
+                  "votes%": "38.66198109",
+                  "status": "won"
+                },
+                {
+                  "constId": 1,
+                  "candName": "MAHAVEER SINGH RANA",
+                  "party": "BJP",
+                  "votes": "71449",
+                  "votes%": "28.46766514",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "MOHD. IQBAL",
+                  "party": "BSP",
+                  "votes": "71019",
+                  "votes%": "28.2963388",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "RANA ADITYA PRATAP SINGH",
+                  "party": "IND",
+                  "votes": "4187",
+                  "votes%": "1.668240478",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "None of the Above",
+                  "party": "NOTA",
+                  "votes": "1576",
+                  "votes%": "0.627930975",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "KAMRAN ALI",
+                  "party": "BHASP",
+                  "votes": "1255",
+                  "votes%": "0.500033867",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "ARUN",
+                  "party": "RLD",
+                  "votes": "1150",
+                  "votes%": "0.458198364",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "HARDHYAN",
+                  "party": "IND",
+                  "votes": "1113",
+                  "votes%": "0.44345633",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "GOPAL SINGH",
+                  "party": "IND",
+                  "votes": "945",
+                  "votes%": "0.376519525",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "KRISHNA KUMAR",
+                  "party": "IND",
+                  "votes": "810",
+                  "votes%": "0.322731022",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "KALYAN SINGH",
+                  "party": "IND",
+                  "votes": "659",
+                  "votes%": "0.262567584",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "LOKESH VERMA",
+                  "party": "BHATARSP",
+                  "votes": "617",
+                  "votes%": "0.245833383",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "SAKEEM KHAN",
+                  "party": "BMUP",
+                  "votes": "425",
+                  "votes%": "0.169334178",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "KARM SINGH",
+                  "party": "IND",
+                  "votes": "319",
+                  "votes%": "0.127100242",
+                  "status": "lost"
+                }
+            ],
+            "text": {
+              "Introduction": "<p>Behat is one of the seven Assembly constituencies in the Saharanpur district of Uttar Pradesh. The seat came into existence after delimitation in 2008. Before that, it was part of the Sarsawa Assembly constituency. Located in the lowlands around the Shivalik Hills, this is constituency number one of Uttar Pradesh. This is what adds prestige to Behat and apparently, every party wants to win it. The Mata Shakumbhari Devi Temple in this constituency is very well known and politicians make beeline for the temple before starting their campaign. Behat region is also famous for growing guava and mango. The number of rain-fed rivers in the area is high because of which mining and stone crushing activities are also carried here.</p>",
+              "Demographic Profile": "<p>As per data available with Election Commission, there were a total of 3,36,576 voters in Behat constituency during the 2017 Assembly elections. Out of this, 1,79,920 voters were male and 1,56,649 were female voters. 7 voters belonged to the third gender. 758 were postal votes in the constituency. The number of service voters in Behat in 2017 was 154 (109 were men and 45 were women).</p><p>In 2012, the number of total voters in Behat constituency was 3,03,273. Out of this, 1,64,139 voters were male and 1,39,133 were female voters. One voter on this constituency belonged to 'others' category. There were 477 postal votes in the constituency. The number of service voters in Behat in 2012 was 121 (81 were men and 40 were women).</p><p>Also, the constituency is dominated by Muslims voters. However, voters belonging to Saini and Rajput communities are also in good numbers.</p>",
+              "Past Winners (Candidates and Parties)": "<p>In the 2017 Assembly elections, Congrees party's Naresh Saini had won the seat with a margin of 25,586 votes (10.13% of total valid votes). He was polled 38.66% votes with 97,035 votes. He defeated the Bharatiya Janata Party's (BJP) Mahaveer Singh Rana who got 71,449 votes (28.47%). The Congress had contested 2017 in alliance with the Samajwadi Party (SP). The total number of valid votes polled was 2,52,559. BSP's Mohammad Iqbal came third with 71,019 votes (28.30%).</p><p>In the 2012 Assembly elections, Mahaveer Singh Rana had contested on Bahujan Samaj Party's (BSP) ticket and won the seat. He was polled 31.78% votes with 70,274 votes. Congress party's Naresh Saini had got 69,760 votes and was the runner up. Rana had defeated Saini by a margin of 514 votes (0.23% of total valid votes). The total number of valid votes polled in this constituency was 2,21,122. Samajwadi Party's candidate Umar Ali Khan came third with 47,366 votes (21.42%) and Bharatiya Janata Party's Ajay Chauhan was at distant fourth position with 23,623 votes (10.68%).</p>",
+              "Candidates in 2012 and 2017": "<p>A total of 13 candidates of different political parties contested the 2017 Uttar Pradesh Assembly elections from Behat. The names of candidates were: Naresh Saini (Congress), Mahaveer Singh Rana (BJP), Mohammad Iqbal (BSP), Rana Aditya Pratap Singh (Independent), Kamran Ali (BHASP), Arun (RLD), Hardhyan (Independent), Gopal Singh (Independent), Krishna Kumar (Independent), Kalyan Singh (Independent), Lokesh Verma (BHATARSP), Sakeem Khan (BMUP) and Karm Singh (Independent).</p><p>In 2012, a total of 13 candidates of different political parties contested the Uttar Pradesh Assembly elections from Behat. The name of candidates were: Mahaveer Singh Rana (BSP), Naresh Saini (Congress), Umar Ali Khan (Samajwadi Party). Ajay Chauhan (BJP), Dharam Singh (CPI), Dhaniram (Independent), Arvind (MD), Kari Inam (RUC), Yashpal (ABHM), Abdul Jabbar (NCP), Vikram (VAJP), Irshad Urf Bhoora (RLM) and Mahmood (LD).</p>",
+              "NOTA (None of the Above)": "<p>In 2017, NOTA came fifth with 1,576 votes (0.63%) in the constituency..</p>",
+              "Voter Turnout": "<p>The total number of valid votes polled during the 2017 Assembly elections was 2,52,559 or 75.04%. In 2012, the total number of valid votes on this Assembly seat was 2,21,122 or 72.92%.</p>",
+              "Poll Dates": "<p>In 2017, the voting took place on February 15 in Behat constituency. </p><p>In 2012, the voting was held on February 28 in Behat.</p>",
+              "Result Dates": "<p>In 2017, the result was announced on March 11, 2017. The counting of votes was done on March 6, 2012.</p>",
+              "Number of Polling Stations": "<p>In the 2017 Assembly elections, there were a total of 336 polling stations in Behat constituency. </p><p>In the 2012 Assembly elections, there were a total of 304 polling stations in Behat constituency.</p> ",
+              "Lok Sabha elections 2014 and 2019": "<p>In the 2019 Lok Sabha elections, it was BSP's Haji Fazlur Rehman who was leading from this Assembly constituency with 1,02,693 votes and had eventually emerged as the winner from the Saharanpur Lok Sabha seat. BJP's sitting MP Raghav Lakhanpal had received 91,278 votes from the constituency with Congress candidate Imran Masood was at the third spot with 61,221 votes.</p><p>Overall, Rehman received 5,14,139 votes (41.72%) while BJP's Lakhanpal managed to get 4,91,722 votes (39.90%) in the Saharanpur Lok Sabha constituency. Congress candidate</p><p>Massod came third with 2,07,068 votes (16.80%).</p><p>In the 2014 Lok Sabha elections, Congress party candidate Imran Masood was leading on this Assembly seat with 89,920 votes. BJP's Raghav Lakhanpal was second with 79,365 votes in the constituency, while BSP's Jagdish Singh Rana was at the third spot with 50,582 votes. SP's Shazan Masood received only 16,978 votes from the Assembly seat. However, it was BJP's Raghav Lakhanpal who clinched victory from the Saharanpur Lok Sabha seat at the end. He defeated the Congress candidate by a margin of 65,090 votes. </p>"
+
+            }
+        },
+        {            
+            "constId": 2,
+            "constName": "Nakur",
+            "loksabhaSeats": "Alipurduars",
+            "district": "Saharanpur",
+            "swingSeat": "GEN",
+            "totalElectorate": 336569,
+            "maleVoters": 13283724,
+            "femaleVoters": 13283724,
+            "thirdGender": 13283724,
+            "totalVotesPolled": 250983,
+            "votedMale": 13283724,
+            "votedFemale": 13283724,
+            "votedThirdGender": 13283724,
+            "demographics": {
+                "totalElectorate": 336569,
+                "maleVoters": 13283724,
+                "femaleVoters": 13283724,
+                "thirdGender": 13283724,
+                "totalVotesPolled": 250983,
+                "votedMale": 13283724,
+                "votedFemale": 13283724,
+                "votedThirdGender": 13283724
+            },
+            "pastResults": {
+                "winner2017": "INC",
+                "winner2012": "BSP",
+                "turnout2017": 13283724,
+                "turnout2012": 13283724,
+                "victoryMargin2012": 25586,
+                "victoryMargin%2012": 10.2,
+                "victoryMargin2017": 25586,
+                "victoryMargin%2017": 10.2
+            },
+            "allYears": {
+                "party2022": "NA",
+                "party2017": "INC",
+                "party2012": "BSP"
+            },
+            "allCandidates":[
+                {
+                  "constId": 1,
+                  "candName": "NARESH SAINI",
+                  "party": "INC",
+                  "votes": "97035",
+                  "votes%": "38.66198109",
+                  "status": "won"
+                },
+                {
+                  "constId": 1,
+                  "candName": "MAHAVEER SINGH RANA",
+                  "party": "BJP",
+                  "votes": "71449",
+                  "votes%": "28.46766514",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "MOHD. IQBAL",
+                  "party": "BSP",
+                  "votes": "71019",
+                  "votes%": "28.2963388",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "RANA ADITYA PRATAP SINGH",
+                  "party": "IND",
+                  "votes": "4187",
+                  "votes%": "1.668240478",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "None of the Above",
+                  "party": "NOTA",
+                  "votes": "1576",
+                  "votes%": "0.627930975",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "KAMRAN ALI",
+                  "party": "BHASP",
+                  "votes": "1255",
+                  "votes%": "0.500033867",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "ARUN",
+                  "party": "RLD",
+                  "votes": "1150",
+                  "votes%": "0.458198364",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "HARDHYAN",
+                  "party": "IND",
+                  "votes": "1113",
+                  "votes%": "0.44345633",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "GOPAL SINGH",
+                  "party": "IND",
+                  "votes": "945",
+                  "votes%": "0.376519525",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "KRISHNA KUMAR",
+                  "party": "IND",
+                  "votes": "810",
+                  "votes%": "0.322731022",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "KALYAN SINGH",
+                  "party": "IND",
+                  "votes": "659",
+                  "votes%": "0.262567584",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "LOKESH VERMA",
+                  "party": "BHATARSP",
+                  "votes": "617",
+                  "votes%": "0.245833383",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "SAKEEM KHAN",
+                  "party": "BMUP",
+                  "votes": "425",
+                  "votes%": "0.169334178",
+                  "status": "lost"
+                },
+                {
+                  "constId": 1,
+                  "candName": "KARM SINGH",
+                  "party": "IND",
+                  "votes": "319",
+                  "votes%": "0.127100242",
+                  "status": "lost"
+                }
+            ],
+            "text": {
+              "Introduction": "<p>Nakur is one of the seven Assembly constituencies in the Saharanpur district of Uttar Pradesh. The seat came into existence after delimitation in 2008. Before that, it was part of the Sarsawa Assembly constituency. Located in the lowlands around the Shivalik Hills, this is constituency number one of Uttar Pradesh. This is what adds prestige to Behat and apparently, every party wants to win it. The Mata Shakumbhari Devi Temple in this constituency is very well known and politicians make beeline for the temple before starting their campaign. Behat region is also famous for growing guava and mango. The number of rain-fed rivers in the area is high because of which mining and stone crushing activities are also carried here.</p>",
+              "Demographic Profile": "<p>As per data available with Election Commission, there were a total of 3,36,576 voters in Behat constituency during the 2017 Assembly elections. Out of this, 1,79,920 voters were male and 1,56,649 were female voters. 7 voters belonged to the third gender. 758 were postal votes in the constituency. The number of service voters in Behat in 2017 was 154 (109 were men and 45 were women).</p><p>In 2012, the number of total voters in Behat constituency was 3,03,273. Out of this, 1,64,139 voters were male and 1,39,133 were female voters. One voter on this constituency belonged to 'others' category. There were 477 postal votes in the constituency. The number of service voters in Behat in 2012 was 121 (81 were men and 40 were women).</p><p>Also, the constituency is dominated by Muslims voters. However, voters belonging to Saini and Rajput communities are also in good numbers.</p>",
+              "Past Winners (Candidates and Parties)": "<p>In the 2017 Assembly elections, Congrees party's Naresh Saini had won the seat with a margin of 25,586 votes (10.13% of total valid votes). He was polled 38.66% votes with 97,035 votes. He defeated the Bharatiya Janata Party's (BJP) Mahaveer Singh Rana who got 71,449 votes (28.47%). The Congress had contested 2017 in alliance with the Samajwadi Party (SP). The total number of valid votes polled was 2,52,559. BSP's Mohammad Iqbal came third with 71,019 votes (28.30%).</p><p>In the 2012 Assembly elections, Mahaveer Singh Rana had contested on Bahujan Samaj Party's (BSP) ticket and won the seat. He was polled 31.78% votes with 70,274 votes. Congress party's Naresh Saini had got 69,760 votes and was the runner up. Rana had defeated Saini by a margin of 514 votes (0.23% of total valid votes). The total number of valid votes polled in this constituency was 2,21,122. Samajwadi Party's candidate Umar Ali Khan came third with 47,366 votes (21.42%) and Bharatiya Janata Party's Ajay Chauhan was at distant fourth position with 23,623 votes (10.68%).</p>",
+              "Candidates in 2012 and 2017": "<p>A total of 13 candidates of different political parties contested the 2017 Uttar Pradesh Assembly elections from Behat. The names of candidates were: Naresh Saini (Congress), Mahaveer Singh Rana (BJP), Mohammad Iqbal (BSP), Rana Aditya Pratap Singh (Independent), Kamran Ali (BHASP), Arun (RLD), Hardhyan (Independent), Gopal Singh (Independent), Krishna Kumar (Independent), Kalyan Singh (Independent), Lokesh Verma (BHATARSP), Sakeem Khan (BMUP) and Karm Singh (Independent).</p><p>In 2012, a total of 13 candidates of different political parties contested the Uttar Pradesh Assembly elections from Behat. The name of candidates were: Mahaveer Singh Rana (BSP), Naresh Saini (Congress), Umar Ali Khan (Samajwadi Party). Ajay Chauhan (BJP), Dharam Singh (CPI), Dhaniram (Independent), Arvind (MD), Kari Inam (RUC), Yashpal (ABHM), Abdul Jabbar (NCP), Vikram (VAJP), Irshad Urf Bhoora (RLM) and Mahmood (LD).</p>",
+              "NOTA (None of the Above)": "<p>In 2017, NOTA came fifth with 1,576 votes (0.63%) in the constituency..</p>",
+              "Voter Turnout": "<p>The total number of valid votes polled during the 2017 Assembly elections was 2,52,559 or 75.04%. In 2012, the total number of valid votes on this Assembly seat was 2,21,122 or 72.92%.</p>",
+              "Poll Dates": "<p>In 2017, the voting took place on February 15 in Behat constituency. </p><p>In 2012, the voting was held on February 28 in Behat.</p>",
+              "Result Dates": "<p>In 2017, the result was announced on March 11, 2017. The counting of votes was done on March 6, 2012.</p>",
+              "Number of Polling Stations": "<p>In the 2017 Assembly elections, there were a total of 336 polling stations in Behat constituency. </p><p>In the 2012 Assembly elections, there were a total of 304 polling stations in Behat constituency.</p> ",
+              "Lok Sabha elections 2014 and 2019": "<p>In the 2019 Lok Sabha elections, it was BSP's Haji Fazlur Rehman who was leading from this Assembly constituency with 1,02,693 votes and had eventually emerged as the winner from the Saharanpur Lok Sabha seat. BJP's sitting MP Raghav Lakhanpal had received 91,278 votes from the constituency with Congress candidate Imran Masood was at the third spot with 61,221 votes.</p><p>Overall, Rehman received 5,14,139 votes (41.72%) while BJP's Lakhanpal managed to get 4,91,722 votes (39.90%) in the Saharanpur Lok Sabha constituency. Congress candidate</p><p>Massod came third with 2,07,068 votes (16.80%).</p><p>In the 2014 Lok Sabha elections, Congress party candidate Imran Masood was leading on this Assembly seat with 89,920 votes. BJP's Raghav Lakhanpal was second with 79,365 votes in the constituency, while BSP's Jagdish Singh Rana was at the third spot with 50,582 votes. SP's Shazan Masood received only 16,978 votes from the Assembly seat. However, it was BJP's Raghav Lakhanpal who clinched victory from the Saharanpur Lok Sabha seat at the end. He defeated the Congress candidate by a margin of 65,090 votes. </p>"
+
+            }
+        }
+      ]
+
+    }
+}
