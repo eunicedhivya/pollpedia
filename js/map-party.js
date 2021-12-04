@@ -73,6 +73,7 @@ function drawAssemblyMap(selector, filldata, mapdata, settings){
             })
             .attr('stroke', "#fff")
             .attr('stroke-width', "0.4")
+            .attr('fill', "#FFF")
             .on('mouseover', tool_tip.show) // to enable d3tip tooltips
             .on('mouseout', tool_tip.hide)
 

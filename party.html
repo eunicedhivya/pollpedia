@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/party.css">
+</head>
+<body>
+    <div class="tv9-dashboard">
+        <section class="container">
+            <div class="row">
+                <div class="party-intro flex-row">
+                    <img src="https://via.placeholder.com/125" class="party-logo" alt="">
+                    <div class="party-intro-content">
+                        <h1 class="dash-title" id="partyName">Bahujan Samajwadi Party</h1>
+                        <p id="partyIntro">The Taliban are reported to have raised their flag above a key border post between Afghanistan and Pakistan,
+                            and claim it is now under their control.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="map-section flex-row">
+                <div class="col">
+                    <div class="map">
+            
+                    </div>
+                </div>
+                <div class="col">
+                    <nav class="yearwisefilters">
+                        <button class="filterBtns" id="year2012">2012</button>
+                        <button class="filterBtns active" id="year2017">2017</button>
+                    </nav>
+                    <div class="seat-info">
+                        <span id="seats-of-party">80/200</span>
+                        Seats
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="allcandresult">
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/d3.v4.min.js"></script>
+    <script src="js/topojson.v2.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/d3-tip.js"></script> <!--used with topojson map-->
+    <script src="js/map-party.js"></script>
+    <script src="js/accordion-table.js"></script>
+    <script>
+        var chosenState = "up";
+        var chosenParty = "BSP";
+        var chosenYear = "2017";
+
+        // var currentUrl = window.location.href;
+        // var url = currentUrl;
+        // var params = (new URL(url)).searchParams;
+        // var chosenState = params.get('state'), chosenParty = params.get('party'), chosenYear = params.get('year');
+        
+        var assemplyconstmap_up = (function () {
+            assemplyconstmap_up = null;
+            jQuery.ajax({
+                'async': false,
+                'global': false,
+                'dataType': 'json',
+                'cache': false,
+                'url': 'assets/maps/UP.json',
+                'success': function (stateShape) {
+                    assemplyconstmap_up = topojson.feature(stateShape, stateShape.objects.collection).features;
+
+                }
+            });
+            return assemplyconstmap_up;
+        })();
+        
+        var partywise_api = (function () {
+            partywise_api = null;
+            jQuery.ajax({
+                'async': false,
+                'global': false,
+                'dataType': 'json',
+                'cache': false,
+                'url': 'assets/data/dataset-party.json',
+                'success': function (partydata) {
+                    partywise_api = partydata;
+
+                }
+            });
+            return partywise_api;
+        })();
+
+       
+        var candData = partywise_api[chosenState].filter(function (obj) {
+            return obj["party-abbr"] == chosenParty;
+        });
+
+        // console.log(candData[0]);
+
+        document.getElementById("year2012").addEventListener("click", function (obj) {
+                d3.selectAll(".filterBtns").attr("class", "filterBtns")
+                this.classList = "filterBtns active";
+                drawAssemblyMap(".map", candData[0]["cand-list"]["2012"], assemplyconstmap_up, {
+                    type: 'party-state',
+                    statecode: 'U07',
+                    vhcode: 'up',
+                    year: '2017',
+                    party: chosenParty,
+                    constnokey: 'ac',
+                    constnamekey: 'ac_name',
+                    scale: 2500,
+                    center: [80.9462, 27.2],
+                    inset: true,
+                    enableEvents: false
+                })
+
+
+                drawAccTable(candData[0]["cand-list"]["2012"], ".allcandresult", ["candName", "party", "constName", "votes%", "status"], {
+                    "party": "Party", "votes%": "Votes%", "candName": " Name", "status": "Won/Lost", "constName": "Constituency"
+                })
+
+        })
+        document.getElementById("year2017").addEventListener("click", function (obj) {
+                d3.selectAll(".filterBtns").attr("class", "filterBtns")
+                this.classList = "filterBtns active";
+
+                drawAssemblyMap(".map", candData[0]["cand-list"]["2017"], assemplyconstmap_up, {
+                type: 'party-state',
+                statecode: 'U07',
+                vhcode: 'up',
+                year: '2017',
+                party: chosenParty,
+                constnokey: 'ac',
+                constnamekey: 'ac_name',
+                scale: 2500,
+                center: [80.9462, 27.2],
+                inset: true,
+                enableEvents: false
+            })
+
+
+            drawAccTable(candData[0]["cand-list"]["2017"], ".allcandresult", ["candName", "party", "constName", "votes%", "status"], {
+                "party": "Party", "votes%": "Votes%", "candName": " Name", "status": "Won/Lost", "constName": "Constituency"
+            })
+        })
+        // document.getElementById("year2022").addEventListener("click", function (obj) {
+        //         d3.selectAll(".filterBtns").attr("class", "filterBtns")
+        //         this.classList = "filterBtns active";
+        // })
+
+        d3.select("#partyName").html(candData[0]["party-name"])
+        d3.select("#partyIntro").html(candData[0]["party-intro"])
+
+        drawAssemblyMap(".map", candData[0]["cand-list"][chosenYear], assemplyconstmap_up, {
+            type: 'party-state',
+            statecode: 'U07',
+            vhcode: 'up',
+            year: '2017',
+            party: chosenParty,
+            constnokey: 'ac',
+            constnamekey: 'ac_name',
+            scale: 2500,
+            center: [80.9462, 27.2],
+            inset: true,
+            enableEvents: false
+        })
+
+    
+        drawAccTable(candData[0]["cand-list"][chosenYear], ".allcandresult", ["candName", "party", "constName", "votes%", "status"], {
+            "party": "Party", "votes%": "Votes%", "candName": " Name", "status": "Won/Lost", "constName": "Constituency"
+        })
+
+    
+
+    </script>
+</body>
+</html>

@@ -14,7 +14,19 @@
 }
 
 .map svg {
-  width: 80%;
+  width: 100%;
+}
+
+.pointcontent p {
+  color: red;
+}
+
+.map-tooltip {
+  background-color: #000;
+  border-radius: 12px;
+  color: #fff;
+  padding: 5px 10px;
+  font-family: "Georama", sans-serif;
 }
 
 .party-intro,
@@ -43,10 +55,12 @@
   border-radius: 50%;
   align-self: center;
 }
-.party-intro h1 {
+#partyName {
   font-size: 40px;
   font-weight: 700;
   margin: 0;
+  color: #605e5e;
+  line-height: 44px;
 }
 .party-intro .party-logo img {
   width: 100%;

@@ -16,7 +16,11 @@
 
 .map svg,
 .upmap {
-  width: 80%;
+  width: 100%;
+}
+
+.pointcontent p {
+  color: red;
 }
 
 .constmap path {
