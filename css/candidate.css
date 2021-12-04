@@ -22,6 +22,7 @@
   text-align: center;
   justify-content: center;
   margin: 0;
+  padding: 0;
 }
 .list-inline li {
   display: flex;
@@ -69,6 +70,19 @@
 
 @media (max-width: 600px) {
   /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+  .candidate-intro-content .list-inline {
+    display: flex;
+    column-gap: 25px;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  .candidate-info .list-inline {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
 }
 @media (min-width: 768px) {
   /* landscape tablets, landscape iPad, lo-res laptops ands desktops */
