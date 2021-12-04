@@ -14,6 +14,9 @@
        svg{
            width: 100%;
        }
+       .aboutconst span{
+           font-weight: bold;
+       }
     </style>
 </head>
         
@@ -246,7 +249,8 @@
             scale: constwisetrenddata2017.stateScale, 
             center: constwisetrenddata2017.stateCenter, 
             inset: true,
-            enableEvents: false
+            enableEvents: false,
+            enableSelect: true
         })   
 
         // Get the current constituency data from map data
@@ -270,7 +274,8 @@
             scale: getConstMap[0].properties.scale, // size adjust until it sits well
             center: getConstMap[0].properties.center, // enter lat long from google of UP
             inset: false,
-            enableEvents: false
+            enableEvents: false,
+            enableSelect: false
         })
 
         // About Constituency

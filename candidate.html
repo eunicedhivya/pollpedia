@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/candidate.css">
+</head>
+<body>
+    <div class="tv9-dashboard">
+        <section class="container">
+                <section class="candidate-intro flex-row">
+                    <img src="https://via.placeholder.com/320" id="candidateImg" alt="">
+                    <div class="candidate-intro-content">
+                        <h1 class="dash-title" id="candidateName">Yogi Adithyanath</h1>
+                        <ul class="list-inline">
+                            <li>Constituency: <span id="constName"></span></li>
+                            <li>State: <span id="stateName"></span></li>
+                            <li>Age: <span id="candAge"></span></li>
+                            <li>Seat Type: <span id="seatType"></span></li>
+                        </ul>
+                        <p id="candidateIntro">The Taliban are reported to have raised their flag above a key border post between Afghanistan and Pakistan,
+                            and claim it is now under their control.</p>
+                    </div>
+                </section>
+                <section class="candidate-info">
+                    <h2>Candidate Info</h2>
+                    <ul class="list-inline">
+                        <li>
+                            <img src="assets/img/criminal-cases.png" alt="">Criminal Case: 
+                            <span id="candCases"></span>
+                        </li>
+                        <li>
+                            <img src="assets/img/education.png" alt="">Education: 
+                            <span id="candEdu"></span>
+                        </li>
+                        <li>
+                            <img src="assets/img/assets.png" alt="">
+                            Total Assets: <span id="candAssets"></span>
+                        </li>
+                        <li>
+                            <img src="assets/img/liabilities.png" alt="">Total Liabilities:
+                            <span id="candLiability"></span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/d3.v4.min.js"></script>
+    <script src="js/topojson.v2.min.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/d3-tip.js"></script> <!--used with topojson map-->
+    <script src="js/map-party.js"></script>
+    <script src="js/accordion-table.js"></script>
+    <script>
+        var chosenState = "up";
+        var chosenCand = 1;
+                
+        var candidate_api = (function () {
+            candidate_api = null;
+            jQuery.ajax({
+                'async': false,
+                'global': false,
+                'dataType': 'json',
+                'cache': false,
+                'url': 'assets/data/dataset-candidate.json',
+                'success': function (partydata) {
+                    candidate_api = partydata;
+
+                }
+            });
+            return candidate_api;
+        })();
+
+        var candData = candidate_api[chosenState].filter(function (obj) {
+            return obj["id"] == chosenCand;
+        });
+    
+        document.getElementById("candidateName").innerHTML = candData[0]["name"];
+        document.getElementById("candidateIntro").innerHTML = candData[0]["intro"];
+        document.getElementById("candidateImg").src = candData[0]["pic"];
+        document.getElementById("constName").innerHTML = candData[0]["constituency"];
+        document.getElementById("stateName").innerHTML = candData[0]["state"];
+        document.getElementById("candAge").innerHTML = candData[0]["age"];
+        document.getElementById("seatType").innerHTML = candData[0]["seat-type"];
+        document.getElementById("candCases").innerHTML = candData[0]["criminalcases"];
+        document.getElementById("candEdu").innerHTML = candData[0]["education"];
+        document.getElementById("candAssets").innerHTML = candData[0]["total-assets"];
+        document.getElementById("candLiability").innerHTML = candData[0]["total-liabilities"];
+
+    </script>
+</body>
+</html>
