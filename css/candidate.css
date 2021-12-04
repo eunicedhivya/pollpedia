@@ -39,6 +39,7 @@
 }
 .candidate-info h2 {
   margin: 0 0 0 0;
+  text-align: center;
 }
 .candidate-info .list-inline li {
   display: flex;
